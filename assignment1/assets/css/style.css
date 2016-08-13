@@ -280,6 +280,7 @@ input[type=submit] {
 
 	#masthead{
 		width: 640px;
+		position: absolute;
 	}
 
 	.container{
@@ -302,8 +303,7 @@ input[type=submit] {
 	.work{
 		width: 100%;
 	}
-	nav {
-		
+	
 	}
 	nav a{
 		margin-bottom: 25px;
