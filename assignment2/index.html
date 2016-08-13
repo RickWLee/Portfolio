@@ -1,59 +1,122 @@
-
-
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>About | Rick Lee</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default marttom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
 </head>
-<!-- Latest compiled and minified CSS -->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <body>
 
-	<header id="masthead">
-		<div class="container">
-			<a href="index.html" id="logo">Rick Lee</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Rick Lee</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
 
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>About Me</h1>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
 
-			<img src="assets/images/biopic01.jpg" class="auth-image" alt="Rick Lee">
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>About Me</h1>
 
-			<p> I was a boy who meets the east and west, but I do not know anything about the ying and yang. I love traveling and eating around the world. If I can go to Japan, I will dive into the anime world.</p>
+      <img src="assets/images/biopic01.jpg" class="auth-image" alt="Rick Lee">
+      <p> I was a boy who meets the east and west, but I do not know anything about the ying and yang. I love traveling and eating around the world. If I can go to Japan, I will dive into the anime world.</p>
 
-			<p>I love competitive sport but I always hurt myself bad. Looks like I am easily to get injured and I am getting old.  Best stick with Taichi so I can keep myself warm.</p>
-			
-		</section>
+      <p>I love competitive sport but I always hurt myself bad. Looks like I am easily to get injured and I am getting old.  Best stick with Taichi so I can keep myself warm.</p>
+      
+      <h3></h3>
+      <p></p>
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+      <div class="w3-text-grey sharethis" style="visibility: visible;">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script><a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com/bootstrap/bootstrap_modal.asp" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a><a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com/bootstrap/bootstrap_modal.asp" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a><a href="https://plus.google.com/share?url=http://www.w3schools.com/bootstrap/bootstrap_modal.asp" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>
+<br><br>
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe" class="w3-modal">
+<div class="w3-modal-content w3-padding-64 w3-animate-zoom" id="popupDIV"></div>
+</div>
+</div>
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-		<section class="sidebar">
-			<div id="connect">
-				<h2>Connect with Me</h2>
 
-				<img src="assets/images/github-128.png" class="social" alt="Github">
-				<img src="assets/images/linkedin-128.png" class="social" alt="LinkedIn">
-				<img src="assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow">
-			</div>
-		</section>
-	</div>
 
-	<footer>
-		<div class="container">
-			&copy; Copyright 2016 Rick Lee
-		</div>
-	</footer>
+
+<footer class="container-fluid text-center">
+  <p> &copy; Copyright 2016 Rick Lee</p>
+</footer>
+
 </body>
 </html>
